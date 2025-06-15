@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create new task item
         const taskItem = document.createElement('li');
+        taskItem.classList.add('task-item'); // Added class using classList.add
         
         // Create task text span
         const taskTextSpan = document.createElement('span');
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
         removeButton.className = 'remove-btn';
+        removeButton.classList.add('btn-danger'); // Added class using classList.add
         
         // Add click event to remove button
         removeButton.onclick = function() {
